@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="cac.ico">
+    <link rel="stylesheet" href="cal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <h>Simple <span class= "calcula">Calculator</span></h>
+    <div class="calculator">
+        <input placeholder="Enter Value" type="text" id="display" >
+        
+        <div class="buttons">
+            
+            <button onclick="clearDisplay()"><span class ="or">AC</span></button>
+            <button onclick="deleteLast()"><span class ="or">DEL</span></button>
+            <button onclick="appendSymbol('/')"><span class ="or">/</span></button>
+            <button onclick="appendSymbol('*')"><span class ="or">*</span></button>
+
+            <button onclick="appendSymbol('7')">7</button>
+            <button onclick="appendSymbol('8')">8</button>
+            <button onclick="appendSymbol('9')">9</button>
+            <button onclick="appendSymbol('-')"><span class ="or">-</span></button>
+
+            
+            <button onclick="appendSymbol('4')">4</button>
+            <button onclick="appendSymbol('5')">5</button>
+            <button onclick="appendSymbol('6')">6</button>
+            <button onclick="appendSymbol('+')"><span class ="or">+</span></button>
+
+            
+            <button onclick="appendSymbol('1')">1</button>
+            <button onclick="appendSymbol('2')">2</button>
+            <button onclick="appendSymbol('3')">3</button>
+            <button onclick="calculate()" class="equals"><span class ="or">=</span></button>
+        
+
+            
+            <button onclick="appendSymbol('0')" class="zero">0</button>
+            <button onclick="appendSymbol('.')">.</button>
+            
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
