@@ -80,7 +80,7 @@ button:hover .or {
     text-align: center;
   }
 .equals{
-  grid-column-start : span 2;
+  grid-row-start : span 2;
   text-align: center;
 }
 
@@ -103,4 +103,5 @@ button:active {
   margin-top: 1px;
 
 }
+
 
